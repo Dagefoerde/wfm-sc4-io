@@ -1,11 +1,13 @@
 package de.wwu.wfm.sc4.msg.insuranceclaim.data;
 
+import java.io.Serializable;
+
 /**
  * Describes a damage entry existing of a name and estimated costs.
  * 
  * @author Tobias
  */
-public class CoverageDecisionEntry {
+public class CoverageDecisionEntry implements Serializable {
 
 	/**
 	 * please increment on every change!!
