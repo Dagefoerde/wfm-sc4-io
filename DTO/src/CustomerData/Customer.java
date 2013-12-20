@@ -1,9 +1,13 @@
 package CustomerData;
 
+import java.io.Serializable;
+
 import General.Address;
 
-public class Customer {
+public class Customer implements Serializable{
 
+	private static final long serialVersionUID = 1L;
+	
 	private String username;
 	private String eMail;
 	private String firstName;
@@ -12,6 +16,11 @@ public class Customer {
 	private int bankCode;
 	private int accountNumber;
 	private Address address;
+	
+	public Customer()
+	{
+		
+	}
 	
 	public Customer(String a, String b, String c, String d, int e, int f, int g, Address h) {
 		this.username = a;

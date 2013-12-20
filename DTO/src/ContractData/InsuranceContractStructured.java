@@ -1,8 +1,11 @@
 package ContractData;
+import java.io.Serializable;
 import java.sql.Date;
 
 
-public class InsuranceContractStructured {
+public class InsuranceContractStructured implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	
 	private String description;
 	private Date startdate;

@@ -1,20 +1,27 @@
 package ContractData;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Requirements {
+public class Requirements implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	
 	private String status;
-	private boolean naturalInsured;
-	private boolean humanInsured;
+	private double naturalInsured;
+	private double humanInsured;
 	private boolean pickUpService;
-	private ArrayList<Car> Cars = new ArrayList<Car>();
+	private ArrayList<Car> cars = new ArrayList<Car>();
 	
-	public Requirements(String a, boolean b, boolean c, boolean d, ArrayList<Car> e){
+	public Requirements(){
+		
+	}
+	
+	public Requirements(String a, double b, double c, boolean d, ArrayList<Car> e){
 		this.status = a;
 		this.naturalInsured = b;
 		this.humanInsured = c;
 		this.pickUpService = d;
-		this.Cars = e;
+		this.setCars(e);
 		
 	}
 
@@ -26,19 +33,19 @@ public class Requirements {
 		this.status = status;
 	}
 
-	public boolean isNaturalInsured() {
+	public double isNaturalInsured() {
 		return naturalInsured;
 	}
 
-	public void setNaturalInsured(boolean naturalInsured) {
+	public void setNaturalInsured(double naturalInsured) {
 		this.naturalInsured = naturalInsured;
 	}
 
-	public boolean isHumanInsured() {
+	public double isHumanInsured() {
 		return humanInsured;
 	}
 
-	public void setHumanInsured(boolean humanInsured) {
+	public void setHumanInsured(double humanInsured) {
 		this.humanInsured = humanInsured;
 	}
 
@@ -50,12 +57,14 @@ public class Requirements {
 		this.pickUpService = pickUpService;
 	}
 
-	public ArrayList<Car> getCars() {
-		return Cars;
+	public void setCars(ArrayList<Car> cars) {
+		this.cars = cars;
 	}
 
-	public void setCars(ArrayList<Car> cars) {
-		Cars = cars;
+	public ArrayList<Car> getCars() {
+		return cars;
 	}
+
+
 
 }

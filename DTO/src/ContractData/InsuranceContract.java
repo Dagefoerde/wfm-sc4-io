@@ -1,9 +1,11 @@
 package ContractData;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+
+import java.io.Serializable;
 
 
-public class InsuranceContract {
+public class InsuranceContract implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	
 	private byte[] pdf;
 	

@@ -1,11 +1,19 @@
 package ContractData;
 
-public class ContractData {
+import java.io.Serializable;
+
+public class ContractData implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	
 	private int contractId;
 	private Requirements requirements;
 	private InsuranceContract insuranceContract;
 	private InsuranceContractStructured insuranceContractStructured;
+	
+	public ContractData(){
+		
+	}
 	
 	public ContractData(int a, Requirements b, InsuranceContract c, InsuranceContractStructured d){
 		this.contractId = a;

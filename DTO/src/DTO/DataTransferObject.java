@@ -7,12 +7,16 @@ import CustomerData.Customer;
 
 public class DataTransferObject implements Serializable {
 
-	private static final long serialVersionUID = 42L;
+	private static final long serialVersionUID = 1L;
 
 	private String communicationReason;
 	private Customer customer;
 	private ContractData contractData;
 	private ClaimData claimData;
+	
+	public DataTransferObject(){
+	}
+	
 	
 	public DataTransferObject(String a, Customer b, ContractData c, ClaimData d){
 		this.communicationReason = a;

@@ -1,10 +1,18 @@
 package General;
 
-public class Address {
+import java.io.Serializable;
+
+public class Address implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	
 	private int streetNumber;
 	private String street;
 	private String postalCode;
+	
+	public Address(){
+		
+	}
 	
 	public Address(int a, String b, String c){
 		this.streetNumber = a;

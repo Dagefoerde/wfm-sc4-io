@@ -1,11 +1,20 @@
 package ContractData;
 
-public class Car {
+import java.io.Serializable;
+
+public class Car implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
+	
+	private String name;
 	private String licensePlate;
 	private String colour;
 	private String type;
-	private float value;
+	private double value;
+	
+	public Car(){
+		
+	}
 	
 	public Car(String a, String b, String c, float d){
 		this.licensePlate = a;
@@ -38,12 +47,20 @@ public class Car {
 		this.type = type;
 	}
 
-	public float getValue() {
+	public double getValue() {
 		return value;
 	}
 
-	public void setValue(float value) {
+	public void setValue(double value) {
 		this.value = value;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
 	}
 	
 }
