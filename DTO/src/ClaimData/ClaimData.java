@@ -1,7 +1,10 @@
 package ClaimData;
 
-public class ClaimData {
-	
+import java.io.Serializable;
+
+public class ClaimData implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private int iD;
 	private ClaimReport claimReport;
 	private ProceduralInstructions instructions;

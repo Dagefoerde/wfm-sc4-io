@@ -1,8 +1,12 @@
 package ClaimData;
 
+import java.io.Serializable;
+
 import General.Address;
 
-public class ServiceStation {
+public class ServiceStation implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
 	private int phone;
 	private Address address;

@@ -1,6 +1,10 @@
 package ClaimData;
 
-public class Invoice {
+import java.io.Serializable;
+
+public class Invoice implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
 	private byte[] pdf;
 	

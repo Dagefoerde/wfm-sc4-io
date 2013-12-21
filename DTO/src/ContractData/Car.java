@@ -8,7 +8,7 @@ public class Car implements Serializable{
 	
 	private String name;
 	private String licensePlate;
-	private String colour;
+	private String color;
 	private String type;
 	private double value;
 	
@@ -18,7 +18,7 @@ public class Car implements Serializable{
 	
 	public Car(String a, String b, String c, float d){
 		this.licensePlate = a;
-		this.colour = b;
+		this.color = b;
 		this.type = c;
 		this.value = d;
 	}
@@ -31,12 +31,12 @@ public class Car implements Serializable{
 		this.licensePlate = licensePlate;
 	}
 
-	public String getColour() {
-		return colour;
+	public String getColor() {
+		return color;
 	}
 
-	public void setColour(String colour) {
-		this.colour = colour;
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 	public String getType() {

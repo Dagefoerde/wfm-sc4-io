@@ -1,8 +1,11 @@
 package ClaimData;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class StructuredInvoiceData {
+public class StructuredInvoiceData implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
 	private Date date;
 	private String pointOfContact;

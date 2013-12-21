@@ -33,7 +33,7 @@ public class Requirements implements Serializable{
 		this.status = status;
 	}
 
-	public double isNaturalInsured() {
+	public double getNaturalInsured() {
 		return naturalInsured;
 	}
 
@@ -41,7 +41,7 @@ public class Requirements implements Serializable{
 		this.naturalInsured = naturalInsured;
 	}
 
-	public double isHumanInsured() {
+	public double getHumanInsured() {
 		return humanInsured;
 	}
 
@@ -57,13 +57,19 @@ public class Requirements implements Serializable{
 		this.pickUpService = pickUpService;
 	}
 
+	public ArrayList<Car> getCars() {
+		return cars;
+	}
+
 	public void setCars(ArrayList<Car> cars) {
 		this.cars = cars;
 	}
 
-	public ArrayList<Car> getCars() {
-		return cars;
-	}
+	
+	
+
+	
+	
 
 
 

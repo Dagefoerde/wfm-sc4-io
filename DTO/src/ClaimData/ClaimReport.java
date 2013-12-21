@@ -1,13 +1,15 @@
 package ClaimData;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 import ContractData.Car;
 import CustomerData.Customer;
 import General.Address;
 
-public class ClaimReport {
-	
+public class ClaimReport implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private Address crashAddress;
 	private Date date;
 	private Customer customer;

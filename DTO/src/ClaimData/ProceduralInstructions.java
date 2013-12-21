@@ -1,6 +1,10 @@
 package ClaimData;
 
-public class ProceduralInstructions {
+import java.io.Serializable;
+
+public class ProceduralInstructions implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
 	private String description;
 	private ServiceStation serviceStation;

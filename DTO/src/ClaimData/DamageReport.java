@@ -1,8 +1,11 @@
 package ClaimData;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class DamageReport {
+public class DamageReport implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
 	private ArrayList<Entry> damageList = new ArrayList<Entry>();
 	private String contactPerson;
