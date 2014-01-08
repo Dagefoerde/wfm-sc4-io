@@ -9,13 +9,17 @@ public class Entry implements Serializable {
 	private int iD;
 	private String description;
 	private int costEstimation;
-	private String coverageDecision;
+	private Boolean coverageDecision;
 	
-	public Entry(int a, String b, int c, String d){
+	public Entry(int a, String b, int c, Boolean d){
 		this.iD = a;
 		this.description = b;
 		this.costEstimation = c;
 		this.coverageDecision = d;
+	}
+	
+	public Entry(int a, String b, int c){
+		this(a, b, c, null);
 	}
 
 	public int getiD() {
@@ -42,11 +46,11 @@ public class Entry implements Serializable {
 		this.costEstimation = costEstimation;
 	}
 
-	public String getCoverageDecision() {
+	public Boolean getCoverageDecision() {
 		return coverageDecision;
 	}
 
-	public void setCoverageDecision(String coverageDecision) {
+	public void setCoverageDecision(Boolean coverageDecision) {
 		this.coverageDecision = coverageDecision;
 	}
 
