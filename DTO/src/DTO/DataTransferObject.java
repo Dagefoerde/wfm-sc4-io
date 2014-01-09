@@ -1,6 +1,9 @@
 package DTO;
 import java.io.Serializable;
 
+import ClaimData.ClaimData;
+import ContractData.ContractData;
+import CustomerData.Customer;
 
 public class DataTransferObject implements Serializable {
 

@@ -1,4 +1,4 @@
-package DTO;
+package General;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package DTO;
+package ClaimData;
 
 import java.io.Serializable;
 
