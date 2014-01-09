@@ -1,11 +1,8 @@
-package ClaimData;
+package DTO;
 
 import java.io.Serializable;
 import java.sql.Date;
 
-import ContractData.Car;
-import CustomerData.Customer;
-import General.Address;
 
 public class ClaimReport implements Serializable {
 

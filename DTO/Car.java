@@ -1,4 +1,4 @@
-package ContractData;
+package DTO;
 
 import java.io.Serializable;
 

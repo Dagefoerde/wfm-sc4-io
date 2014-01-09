@@ -1,8 +1,7 @@
-package CustomerData;
+package DTO;
 
 import java.io.Serializable;
 
-import General.Address;
 
 public class Customer implements Serializable{
 

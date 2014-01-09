@@ -1,4 +1,4 @@
-package ClaimData;
+package DTO;
 
 import java.io.Serializable;
 
@@ -9,17 +9,13 @@ public class Entry implements Serializable {
 	private int iD;
 	private String description;
 	private int costEstimation;
-	private Boolean coverageDecision;
+	private String coverageDecision;
 	
-	public Entry(int a, String b, int c, Boolean d){
+	public Entry(int a, String b, int c, String d){
 		this.iD = a;
 		this.description = b;
 		this.costEstimation = c;
 		this.coverageDecision = d;
-	}
-	
-	public Entry(int a, String b, int c){
-		this(a, b, c, null);
 	}
 
 	public int getiD() {
@@ -46,11 +42,11 @@ public class Entry implements Serializable {
 		this.costEstimation = costEstimation;
 	}
 
-	public Boolean getCoverageDecision() {
+	public String getCoverageDecision() {
 		return coverageDecision;
 	}
 
-	public void setCoverageDecision(Boolean coverageDecision) {
+	public void setCoverageDecision(String coverageDecision) {
 		this.coverageDecision = coverageDecision;
 	}
 

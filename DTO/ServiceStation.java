@@ -1,8 +1,7 @@
-package ClaimData;
+package DTO;
 
 import java.io.Serializable;
 
-import General.Address;
 
 public class ServiceStation implements Serializable {
 
