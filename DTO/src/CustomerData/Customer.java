@@ -12,7 +12,7 @@ public class Customer implements Serializable{
 	private String eMail;
 	private String firstName;
 	private String lastName;
-	private int phone;
+	private String phone;
 	private int bankCode;
 	private int accountNumber;
 	private Address address;
@@ -22,7 +22,7 @@ public class Customer implements Serializable{
 		
 	}
 	
-	public Customer(String a, String b, String c, String d, int e, int f, int g, Address h) {
+	public Customer(String a, String b, String c, String d, String e, int f, int g, Address h) {
 		this.username = a;
 		this.eMail = b;
 		this.firstName = c;
@@ -66,11 +66,11 @@ public class Customer implements Serializable{
 		this.lastName = lastName;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
