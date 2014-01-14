@@ -11,6 +11,7 @@ public class Requirements implements Serializable{
 	private double humanInsured;
 	private boolean pickUpService;
 	private ArrayList<Car> cars = new ArrayList<Car>();
+	private String comment;
 	
 	public Requirements(){
 		
@@ -63,6 +64,14 @@ public class Requirements implements Serializable{
 
 	public void setCars(ArrayList<Car> cars) {
 		this.cars = cars;
+	}
+	
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	public String getComment() {
+		return comment;
 	}
 
 	

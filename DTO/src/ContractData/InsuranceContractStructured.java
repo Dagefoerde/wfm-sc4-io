@@ -11,6 +11,10 @@ public class InsuranceContractStructured implements Serializable{
 	private Date startdate;
 	private Date enddate;
 	
+	public InsuranceContractStructured()
+	{
+	}
+	
 	public InsuranceContractStructured(String a, Date b, Date c){
 		this.description = a;
 		this.startdate = b;

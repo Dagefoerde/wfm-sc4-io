@@ -11,6 +11,10 @@ public class DamageReport implements Serializable {
 	private String contactPerson;
 	private ServiceStation serviceStation;
 	
+	public DamageReport()
+	{
+	}
+	
 	public DamageReport(ArrayList<Entry> a, String b, ServiceStation c){
 		this.damageList = a;
 		this.contactPerson = b;
