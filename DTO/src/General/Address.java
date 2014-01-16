@@ -15,10 +15,11 @@ public class Address implements Serializable{
 		
 	}
 	
-	public Address(int a, String b, String c){
-		this.streetNumber = a;
-		this.street = b;
-		this.postalCode = c;
+	public Address(int streetNumber, String street, String postalCode, String city){
+		this.streetNumber = streetNumber;
+		this.street = street;
+		this.postalCode = postalCode;
+		this.city = city;
 	}
 
 	public int getStreetNumber() {

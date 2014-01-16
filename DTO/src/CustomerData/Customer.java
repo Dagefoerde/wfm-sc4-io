@@ -22,15 +22,15 @@ public class Customer implements Serializable{
 		
 	}
 	
-	public Customer(String a, String b, String c, String d, String e, int f, int g, Address h) {
-		this.username = a;
-		this.eMail = b;
-		this.firstName = c;
-		this.lastName = d;
-		this.phone = e;
-		this.bankCode = f;
-		this.accountNumber = g;
-		this.address = h;
+	public Customer(String username, String eMail, String firstName, String lastName, String phone, int bankCode, int accountNumber, Address address) {
+		this.username = username;
+		this.eMail = eMail;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phone = phone;
+		this.bankCode = bankCode;
+		this.accountNumber = accountNumber;
+		this.address = address;
 		
 	}
 

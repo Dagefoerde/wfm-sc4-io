@@ -1,7 +1,7 @@
 package ClaimData;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 
 import ContractData.Car;
 import CustomerData.Customer;
@@ -19,15 +19,15 @@ public class ClaimReport implements Serializable {
 	private boolean isMaintenace;
 	private boolean needsTow;
 	
-	public ClaimReport(Address a, Date b, Customer c, Car d, String e, String f, boolean g, boolean h){
-		this.crashAddress = a;
-		this.date = b;
-		this.customer = c;
-		this.car = d;
-		this.cause = e;
-		this.description = f;
-		this.isMaintenace = g;
-		this.needsTow = h;
+	public ClaimReport(Address crashAddress, Date date, Customer customer, Car car, String cause, String description, boolean isMaintenace, boolean needsTow){
+		this.crashAddress = crashAddress;
+		this.date = date;
+		this.customer = customer;
+		this.car = car;
+		this.cause = cause;
+		this.description = description;
+		this.isMaintenace = isMaintenace;
+		this.needsTow = needsTow;
 	}
 
 	public Address getCrashAddress() {
