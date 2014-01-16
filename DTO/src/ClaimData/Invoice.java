@@ -1,6 +1,7 @@
 package ClaimData;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 
 public class Invoice implements Serializable {
@@ -11,7 +12,7 @@ public class Invoice implements Serializable {
 	
 	private Date date;
 	private String pointOfContact;
-	private double dueSum;
+	private int dueSum;
 	private int invoiceNumber;
 	private String invoiceText;
 	private Date paymentTerm;
@@ -19,6 +20,7 @@ public class Invoice implements Serializable {
 	private String bankName;
 	private String bankCode;
 	private String bankAccountHolder;
+	private Collection<InvoiceElement> InvoiceElements;
 	
 	public Invoice(byte[] a){
 		this.invoice = a;
@@ -56,7 +58,7 @@ public class Invoice implements Serializable {
 		return dueSum;
 	}
 
-	public void setDueSum(double dueSum) {
+	public void setDueSum(int dueSum) {
 		this.dueSum = dueSum;
 	}
 
@@ -114,6 +116,14 @@ public class Invoice implements Serializable {
 
 	public void setBankAccountHolder(String bankAccountHolder) {
 		this.bankAccountHolder = bankAccountHolder;
+	}
+
+	public Collection<InvoiceElement> getInvoiceElements() {
+		return InvoiceElements;
+	}
+
+	public void setInvoiceElements(Collection<InvoiceElement> invoiceElements) {
+		InvoiceElements = invoiceElements;
 	}
 
 }
