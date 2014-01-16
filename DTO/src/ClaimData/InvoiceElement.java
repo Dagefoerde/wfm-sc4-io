@@ -1,7 +1,7 @@
 package ClaimData;
 /**
  * represents an invoice element
- * got description and an amount
+ * stores a description and amount
  * @author ben
  *
  */
