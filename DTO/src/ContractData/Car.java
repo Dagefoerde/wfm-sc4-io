@@ -16,11 +16,11 @@ public class Car implements Serializable{
 		
 	}
 	
-	public Car(String a, String b, String c, float d){
-		this.licensePlate = a;
-		this.color = b;
-		this.type = c;
-		this.value = d;
+	public Car(String licensePlate, String color, String type, float value){
+		this.licensePlate = licensePlate;
+		this.color = color;
+		this.type = type;
+		this.value = value;
 	}
 
 	public String getLicensePlate() {
