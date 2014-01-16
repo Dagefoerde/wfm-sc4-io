@@ -8,19 +8,19 @@ public class ServiceStation implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private int phone;
+	private String phone;
 	private Address address;
 	
-	public ServiceStation(int a, Address b){
-		this.phone = a;
-		this.address = b;
+	public ServiceStation(String phone, Address address){
+		this.phone = phone;
+		this.address = address;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
