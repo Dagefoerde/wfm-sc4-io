@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class ClaimData implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private int iD;
+	private int id;
 	private ClaimReport claimReport;
 	private ProceduralInstructions instructions;
 	private DamageReport damageReport;
@@ -16,7 +16,7 @@ public class ClaimData implements Serializable {
 	public ClaimData() {}
 	
 	public ClaimData(int a, ClaimReport b, ProceduralInstructions c, DamageReport d, String e, Invoice f, PaymentReminder g){
-		this.iD = a;
+		this.setId(a);
 		this.claimReport = b;
 		this.instructions = c;
 		this.damageReport = d;
@@ -25,12 +25,12 @@ public class ClaimData implements Serializable {
 		this.paymentReminder = g;
 	}
 
-	public int getiD() {
-		return iD;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public void setiD(int iD) {
-		this.iD = iD;
+	public int getId() {
+		return id;
 	}
 
 	public ClaimReport getClaimReport() {
@@ -80,5 +80,7 @@ public class ClaimData implements Serializable {
 	public void setPaymentReminder(PaymentReminder paymentReminder) {
 		this.paymentReminder = paymentReminder;
 	}
+
+	
 
 }
