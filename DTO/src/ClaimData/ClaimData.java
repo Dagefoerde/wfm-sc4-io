@@ -13,6 +13,8 @@ public class ClaimData implements Serializable {
 	private Invoice invoice;
 	private PaymentReminder paymentReminder;
 	
+	public ClaimData() {}
+	
 	public ClaimData(int a, ClaimReport b, ProceduralInstructions c, DamageReport d, String e, Invoice f, PaymentReminder g){
 		this.iD = a;
 		this.claimReport = b;
