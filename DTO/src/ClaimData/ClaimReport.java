@@ -20,6 +20,8 @@ public class ClaimReport implements Serializable {
 	private boolean needsTow;
 	private String crashAddressDescription;
 	
+	public ClaimReport() {}
+	
 	public ClaimReport(Address crashAddress, Date date, Customer customer, Car car, String cause, String description, boolean isMaintenace, boolean needsTow){
 		this.crashAddress = crashAddress;
 		this.date = date;
