@@ -18,8 +18,7 @@ public class ClaimReport implements Serializable {
 	private String description;
 	private boolean isMaintenace;
 	private boolean needsTow;
-	
-	public ClaimReport() {}
+	private String crashAddressDescription;
 	
 	public ClaimReport(Address crashAddress, Date date, Customer customer, Car car, String cause, String description, boolean isMaintenace, boolean needsTow){
 		this.crashAddress = crashAddress;
@@ -94,6 +93,14 @@ public class ClaimReport implements Serializable {
 
 	public void setNeedsTow(boolean needsTow) {
 		this.needsTow = needsTow;
+	}
+
+	public void setCrashAddressDescription(String crashAddressDescription) {
+		this.crashAddressDescription = crashAddressDescription;
+	}
+
+	public String getCrashAddressDescription() {
+		return crashAddressDescription;
 	}
 	
 	
