@@ -9,6 +9,8 @@ public class ProceduralInstructions implements Serializable {
 	private String description;
 	private ServiceStation serviceStation;
 	
+	public ProceduralInstructions() {}
+	
 	public ProceduralInstructions(String a, ServiceStation b){
 		this.description = a;
 		this.serviceStation = b;
