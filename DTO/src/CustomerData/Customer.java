@@ -16,6 +16,7 @@ public class Customer implements Serializable{
 	private int bankCode;
 	private int accountNumber;
 	private Address address;
+	private int websiteUserId;
 	
 	public Customer()
 	{
@@ -96,6 +97,14 @@ public class Customer implements Serializable{
 
 	public void setAddress(Address address) {
 		this.address = address;
+	}
+
+	public void setWebsiteUserId(int websiteUserId) {
+		this.websiteUserId = websiteUserId;
+	}
+
+	public int getWebsiteUserId() {
+		return websiteUserId;
 	}
 	
 	
