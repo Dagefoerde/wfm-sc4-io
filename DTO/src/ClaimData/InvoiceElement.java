@@ -1,4 +1,7 @@
 package ClaimData;
+
+import java.io.Serializable;
+
 /**
  * represents an invoice element
  * stores a description and amount
