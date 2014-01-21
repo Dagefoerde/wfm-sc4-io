@@ -5,7 +5,7 @@ package ClaimData;
  * @author ben
  *
  */
-public class InvoiceElement {
+public class InvoiceElement implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
