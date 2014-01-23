@@ -1,6 +1,7 @@
 package ContractData;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Requirements implements Serializable{
 	
@@ -12,6 +13,8 @@ public class Requirements implements Serializable{
 	private boolean pickUpService;
 	private ArrayList<Car> cars = new ArrayList<Car>();
 	private String comment;
+	private Date startDate;
+	private Date endDate;
 	
 	public Requirements(){
 		
@@ -72,6 +75,22 @@ public class Requirements implements Serializable{
 
 	public String getComment() {
 		return comment;
+	}
+
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+
+	public Date getStartDate() {
+		return startDate;
+	}
+
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+
+	public Date getEndDate() {
+		return endDate;
 	}
 
 	
