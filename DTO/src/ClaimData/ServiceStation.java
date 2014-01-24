@@ -11,6 +11,10 @@ public class ServiceStation implements Serializable {
 	private String phone;
 	private Address address;
 	
+	public ServiceStation(){
+		
+	}
+	
 	public ServiceStation(String phone, Address address){
 		this.phone = phone;
 		this.address = address;
